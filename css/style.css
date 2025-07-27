@@ -81,12 +81,6 @@ body {
     font-family: var(--paraFont);
 }
 
-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-}
-
 input,
 textarea {
     width: 100%;
@@ -114,7 +108,7 @@ button {
 }
 
 :root {
-    --colorPrimary: #ff7c08;
+    --colorPrimary: #d42357;
     --colorRed: #eb0029;
     --paraColor: #484747;
     --colorBlack: #231f40;
@@ -190,19 +184,6 @@ button {
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
-}
-
-.section_heading h4::after {
-    position: absolute;
-    content: "";
-    background: url(../images/heading_shapes_1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 65px;
-    height: 23px;
-    top: 3px;
-    right: -80px;
 }
 
 .section_heading h2 {
@@ -329,23 +310,21 @@ button {
 
 /* menu start */
 .main_menu {
-    position: fixed;
-    top: 50px;
+     position: fixed;
+    top: 30px;
     width: 100%;
     height: 80px;
     background: var(--colorWhite);
-    border-bottom: 1px solid #eee;
     z-index: 999;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
+    -o-transition: all linear .3s;}
 
 .main_menu .navbar-brand {
     display: inline-block;
-    width: 200px;
+    width: 100px;
 }
 
 .main_menu .navbar-nav {
@@ -529,7 +508,7 @@ button {
     -o-transition: all linear .3s;
     width: 40px;
     height: 40px;
-    background: #ff7c0826;
+    background: #d4235726;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -1158,7 +1137,7 @@ button {
     height: 100%;
     top: 0;
     right: -1px;
-    background: #ff7c08e8;
+    background: #d42357e8;
     clip-path: polygon(54% 0, 100% 0%, 100% 100%, 38% 100%);
     border-radius: 0px 10px 10px 0px;
     -webkit-border-radius: 0px 10px 10px 0px;
@@ -1410,7 +1389,7 @@ button {
 .menu_item_text .add_to_cart {
     position: absolute;
     left: -12px;
-    bottom: 25px;
+    bottom: 0;
     background: var(--colorPrimary);
     padding: 6px 25px 6px 25px;
     text-transform: capitalize;
@@ -1628,7 +1607,7 @@ button {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #ff7c0821;
+    background: #d4235721;
     color: var(--colorPrimary);
     font-size: 16px;
     margin: 0px 5px;
@@ -2182,7 +2161,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #ff7c0845;
+    border-top: 1px solid #d4235745;
     padding-top: 15px;
     margin-top: 20px;
 }
@@ -2270,7 +2249,7 @@ footer {
     color: #dfdddd;
     margin-top: 20px;
     display: block;
-    border-bottom: 1px solid #ff7c0885;
+    border-bottom: 1px solid #d4235785;
     padding-bottom: 20px;
     margin-bottom: 20px;
     padding-left: 35px;
@@ -2308,21 +2287,6 @@ footer {
     display: block;
     position: relative;
     padding-left: 15px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
-
-.footer_content ul li a::after {
-    position: absolute;
-    content: "";
-    width: 7px;
-    height: 7px;
-    background: var(--colorPrimary);
-    top: 9px;
-    left: 0;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -2921,7 +2885,7 @@ footer {
 }
 
 .contact_info {
-    border-bottom: 1px solid #ff7c085c;
+    border-bottom: 1px solid #d423575c;
     padding-bottom: 35px;
     margin-bottom: 35px;
 }
@@ -3027,7 +2991,7 @@ footer {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background: #ff7c082e;
+    background: #d423572e;
     color: var(--colorPrimary);
     border-right: 1px solid #E4E7E9;
     -webkit-transform: translateY(-50%);
@@ -3435,7 +3399,7 @@ footer {
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
-    border-bottom: 1px solid #ff7c0840;
+    border-bottom: 1px solid #d4235740;
     margin-bottom: 30px;
     padding-left: 25px;
     padding-bottom: 10px;
@@ -4260,7 +4224,7 @@ footer {
     font-size: 15px;
     font-weight: 400;
     background: var(--colorWhite);
-    border: 1px solid #ff7c0845;
+    border: 1px solid #d4235745;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -4306,7 +4270,7 @@ footer {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
-    border-bottom: 1px solid #ff7c0845;
+    border-bottom: 1px solid #d4235745;
     padding-bottom: 5px;
 }
 
@@ -4327,7 +4291,7 @@ footer {
 }
 
 .cart_list_footer_button .total {
-    border-top: 1px solid #ff7c0845;
+    border-top: 1px solid #d4235745;
     padding-top: 10px;
     color: var(--colorBlack);
 }
@@ -4368,7 +4332,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ff7c085c;
+    border-bottom: 1px solid #d423575c;
 }
 
 .checkout_form h5 a {
@@ -4476,7 +4440,7 @@ footer {
     text-transform: capitalize;
     margin-top: 10px;
     display: block;
-    border-top: 1px solid #ff7c085c;
+    border-top: 1px solid #d423575c;
     padding-top: 10px;
 }
 
@@ -4747,7 +4711,7 @@ footer {
     PAYMENT PAGE START
 ============================*/
 .single_payment {
-    border: 1px solid #ff7c0847;
+    border: 1px solid #d4235747;
     overflow: hidden;
     background: var(--colorWhite);
     display: block;
@@ -5047,7 +5011,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     background: #f3f7fb;
-    border: 1px solid #ff7c0830;
+    border: 1px solid #d4235730;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -5889,3 +5853,7 @@ footer {
 /*=======================
     DASHBOARD PAGE END
 ========================*/
+
+.navbar-collapse {
+    flex-grow: 0;
+}
